@@ -90,6 +90,12 @@ input:focus {
     color: #111;
     margin-top: 0;
 }
+.user-info h3 {
+    color: #777;
+    font-weight: 400;
+    font-size: .95rem;
+    margin-top: 0;
+}
 
 .user-info p{
     color: #777;
