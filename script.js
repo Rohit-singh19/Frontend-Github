@@ -10,8 +10,6 @@ async function getUser(username) {
     const resp = await fetch(APIURL + username);
     const respData = await resp.json();
 
-    console.log(respData);
-
     createUserCard(respData);
 
     getRepos(username);
@@ -20,8 +18,6 @@ async function getUser(username) {
 async function getRepos(username) {
     const resp = await fetch(APIURL + username + "/repos");
     const respData = await resp.json();
-
-    console.log(respData);
 
     addReposToCard(respData);
 }
@@ -38,6 +34,7 @@ function createUserCard(user) {
             </div>
             <div class="user-info">
                 <h2>${user.name}</h2>
+                <h3>${user.login}</h3>
                 <p>${user.bio}</p>
 
                 <ul class="info">
