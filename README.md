@@ -22,10 +22,9 @@
 const APIURL = "https://api.github.com/users/";
 ```
 
-## Plugins
+## Function
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
+There is a brief description of every function that is used in project.
 
 | Function | Work |
 | ------ | ------ |
