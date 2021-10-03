@@ -67,6 +67,8 @@ input:focus {
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
         0 15px 40px rgba(0, 0, 0, 0.1);
     display: flex;
+    /* align-items: center; */
+    /* flex-flow: wrap column; */
     padding: 3rem;
     max-width: 800px;
     margin: auto;
@@ -104,7 +106,7 @@ input:focus {
 .user-info ul {
     color: #888888;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style-type: none;
     padding: 0;
     max-width: 400px;
@@ -112,6 +114,7 @@ input:focus {
 }
 
 .user-info ul li {
+    margin-right: .5rem;
     display: flex;
     align-items: center;
 }
@@ -137,15 +140,16 @@ input:focus {
     margin-left: 10px;
 
 }
-
-.repos{
+/* 
+#repos{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-}
+} */
 
 .repo {
+    width: 100%;
     display: block;
     font-weight: 800;
     color: blue;
@@ -153,4 +157,37 @@ input:focus {
     padding-left: 0;
     border-bottom: 1px solid #888888;
     font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width:550px) {
+    header{
+        padding: .5rem .3rem;
+    }
+    .name{
+        display: none;
+    }
+
+    .search input{
+        padding: .5rem;
+        font-size: .8rem;
+    }
+    .card{
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        padding: .6rem;
+        font-size: .7rem;
+    }
+    .user-info{
+        margin: 0;
+    }
+
+    .info{
+        align-items: center;
+        flex-flow: wrap row;
+    }
+    .repo{
+        font-size: .8rem;
+    }
 }
