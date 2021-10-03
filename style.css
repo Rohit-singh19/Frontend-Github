@@ -140,13 +140,6 @@ input:focus {
     margin-left: 10px;
 
 }
-/* 
-#repos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-} */
 
 .repo {
     width: 100%;
